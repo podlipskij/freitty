@@ -1,0 +1,16 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.counter {
+  color: var(--muted-light);
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}

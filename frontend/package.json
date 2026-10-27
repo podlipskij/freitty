@@ -1,0 +1,42 @@
+{
+  "name": "freitty-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "qs": "6.16.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-is": "19.1.1",
+    "react-router": "7.18.4",
+    "react-virtuoso": "4.18.19",
+    "recharts": "3.2.1",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/node": "22.18.0",
+    "@types/qs": "6.15.1",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.4"
+  }
+}

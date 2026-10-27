@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.error {
+  padding: 10px 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 3px solid var(--danger);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #991b1b;
+}
+
+.submit {
+  justify-content: center;
+  padding: 10px 16px;
+}
+
+.demo {
+  margin-top: 4px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.demo code {
+  font-family: var(--mono);
+  color: var(--navy);
+  font-weight: 600;
+}

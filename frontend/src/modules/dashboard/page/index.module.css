@@ -1,0 +1,18 @@
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 12px;
+}
+
+.sectionHead h2 {
+  font-size: 16px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.sectionHead a {
+  font-size: 12px;
+  color: var(--blue);
+  font-weight: 600;
+}

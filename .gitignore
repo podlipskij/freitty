@@ -1,0 +1,25 @@
+# dependencies & build output
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+coverage/
+
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# local scratch (mockup, archived Next.js client)
+temp/
+
+# deploy
+.vercel/

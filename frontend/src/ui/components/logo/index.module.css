@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.accent {
+  color: var(--brand-red);
+}
+
+.light {
+  color: #fff;
+}
+.dark {
+  color: var(--ink);
+}
+
+.md {
+  font-size: 22px;
+}
+.lg {
+  font-size: 26px;
+}

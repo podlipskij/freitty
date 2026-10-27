@@ -1,0 +1,14 @@
+.badge {
+  margin-left: auto;
+  background: var(--brand-red);
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.loading {
+  margin-left: auto;
+  opacity: 0.25;
+}

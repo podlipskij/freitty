@@ -1,0 +1,20 @@
+.button {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: none;
+  font-size: 16px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  color: var(--danger);
+  background: #fef2f2;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}

@@ -1,0 +1,27 @@
+.item {
+  padding-bottom: 10px;
+}
+
+.footer {
+  padding-bottom: 10px;
+}
+
+.failed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted-light);
+  padding: 8px 0 16px;
+}
+
+.retry {
+  border: none;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.root {
+  background: #f9fafb;
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.icon {
+  font-size: 40px;
+  opacity: 0.6;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.text {
+  margin-top: 6px;
+  font-size: 13px;
+}
