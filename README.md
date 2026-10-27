@@ -49,19 +49,6 @@ Backend: `npm test` — Jest unit tests for the value objects and the order mapp
 | GET    | `/api/dashboard/activity?period=` | activity charts (`day, cw, month, quarter`)              |
 | GET    | `/api/dashboard/attention` | "Need attention" counters (sidebar badge)                       |
 
-## Auth
-
-- The backend signs a JWT (`sub`, `role`) and puts it into an httpOnly, `SameSite=Lax` cookie
-  `access_token` (`Secure` when `COOKIE_SECURE=true`). TTL: `ACCESS_TOKEN_TTL_SECONDS`.
-- A global `JwtAuthGuard` protects every route; `@Public()` opts out, `@SessionUser()` gives the token identity.
-  Single-tenant: every signed-in user sees all orders (the customer is a plain `orders.customer` field).
-- Passwords are stored as bcrypt hashes. In **development any password is accepted** for an existing email; the hash is checked only in production.
-- The SPA calls the API on its own origin (`/api`): the Vite dev server proxies it, in production the host
-  should rewrite `/api/*` to the backend so the cookie stays first-party. With `VITE_API_URL` pointing to another
-  origin the cookie needs `SameSite=None; Secure` and the backend `CORS_ORIGIN` must list the web origin.
-- Any 401 from the API (except login/logout) resets the main store and redirects to `/login?next=<current page>`.
-
-Demo users (password `freitty-demo`, see `SEED_USER_PASSWORD`): `user1@rway.test` (admin), `user2..4@rway.test` (dispatchers).
 
 ## Environments (development / production)
 
